@@ -173,10 +173,10 @@ def custom_index(input_list, value):
     for i, item in enumerate(input_list):
         if item == value:
             value = i
+            print(value)
             break
 
     return value
-
 
 def custom_count(input_list, value):
     """Return the number of times value appears in the list.
@@ -190,6 +190,12 @@ def custom_count(input_list, value):
         2
 
     """
+
+    count = 0
+
+    for i, item in enumerate(input_list):
+        if item == value:
+            count = count + 1
 
     return count
 

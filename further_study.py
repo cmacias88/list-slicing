@@ -133,8 +133,6 @@ def custom_remove(input_list, value):
 
     pass
 
-print(custom_remove(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do'))
-
 def custom_pop(input_list):
     """Remove the last item in the list and returns it.
 
@@ -153,7 +151,9 @@ def custom_pop(input_list):
 
     last_element = input_list[-1]
 
-    input_list = input_list[0:-1]
+    for i, item in enumerate(input_list):
+        if item == last_element:
+            del input_list[i]
 
     return last_element
 

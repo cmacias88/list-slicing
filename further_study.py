@@ -21,8 +21,6 @@ def custom_len(input_list):
 
     return i
 
-print(custom_len(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']))
-
 # For the next four exercises, you'll need to be clever and think about ways
 # to use list slice assignment.
 #
@@ -48,7 +46,7 @@ def custom_append(input_list, value):
 
     """
 
-    
+    input_list[0:] = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do', 'Re']
 
     pass
 
@@ -131,9 +129,7 @@ def custom_pop(input_list):
 
     """
 
-    removed = input_list.pop()
-
-    return removed
+    pass
 
 
 def custom_index(input_list, value):

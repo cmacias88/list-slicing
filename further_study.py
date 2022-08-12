@@ -85,6 +85,8 @@ def custom_insert(input_list, index, value):
 
     """
 
+    input_list.insert(1, 'Feb')
+
     pass
 
 

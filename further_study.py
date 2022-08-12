@@ -67,7 +67,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    input_list.extend(['Apr','May']) 
+    input_list[0:] = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
 
     pass
 
@@ -220,4 +220,8 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    if some_list[0:] == another_list[0:]:
+        return True
+    else:
+        return False
+

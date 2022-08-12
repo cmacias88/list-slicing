@@ -16,8 +16,12 @@ def custom_len(input_list):
 
     """
 
-    return len(input_list)
+    for i, items in enumerate(input_list):
+        i += 1
 
+    return i
+
+print(custom_len(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']))
 
 # For the next four exercises, you'll need to be clever and think about ways
 # to use list slice assignment.
@@ -44,7 +48,7 @@ def custom_append(input_list, value):
 
     """
 
-    input_list.append("Re")
+    
 
     pass
 
@@ -182,10 +186,7 @@ def custom_reverse(input_list):
 
     """
 
-    input_list[::-1]
-
     pass
-
 
 def custom_contains(input_list, value):
     """Return True or False if value is in the input_list.

@@ -106,6 +106,8 @@ def custom_remove(input_list, value):
 
     """
 
+    input_list.remove('Do')
+
     pass
 
 

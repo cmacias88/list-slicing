@@ -46,7 +46,11 @@ def custom_append(input_list, value):
 
     """
 
-    input_list[0:] = ['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do', 'Re']
+    additional_value = [' ']
+    additional_value[0] = value
+
+    input_list[0:] = input_list + additional_value
+
 
     pass
 
@@ -87,9 +91,20 @@ def custom_insert(input_list, index, value):
 
     """
 
-    input_list.insert(1, 'Feb')
+    index = int(index)
 
-    pass
+    index_plus_one = index + 1
+
+    initial = input_list[0:index]
+    print(initial)
+
+    external = input_list[index:]
+    print(external)
+
+    input_list[index] = value
+
+
+print(custom_insert(['Jan', 'Mar'], 1, 'Feb'))
 
 
 def custom_remove(input_list, value):
@@ -129,8 +144,13 @@ def custom_pop(input_list):
 
     """
 
-    pass
+    last_element = input_list[-1]
 
+    input_list = input_list[0:-1]
+
+    return last_element
+
+print(custom_pop(['Jan', 'Feb', 'March']))
 
 def custom_index(input_list, value):
     """Return the index of the first item of value found in input_list.

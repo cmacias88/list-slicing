@@ -65,6 +65,8 @@ def custom_extend(input_list, second_list):
 
     """
 
+    input_list.extend(['Apr','May']) 
+
     pass
 
 

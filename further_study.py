@@ -157,8 +157,6 @@ def custom_pop(input_list):
 
     return last_element
 
-print(custom_pop(['Jan', 'Feb', 'March']))
-
 def custom_index(input_list, value):
     """Return the index of the first item of value found in input_list.
 
@@ -172,9 +170,12 @@ def custom_index(input_list, value):
 
     """
 
-    input_list.index('Re')
+    for i, item in enumerate(input_list):
+        if item == value:
+            value = i
+            break
 
-    return 1
+    return value
 
 
 def custom_count(input_list, value):
@@ -190,7 +191,7 @@ def custom_count(input_list, value):
 
     """
 
-    return 0
+    return count
 
 
 def custom_reverse(input_list):

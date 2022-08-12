@@ -23,8 +23,7 @@ def tail(input_list):
 
     """
 
-    return []
-
+    return input_list[-2:]
 
 def last(input_list):
     """Return the last item of the input list.

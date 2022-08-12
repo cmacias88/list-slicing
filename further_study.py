@@ -44,6 +44,8 @@ def custom_append(input_list, value):
 
     """
 
+    input_list.append("Re")
+
     pass
 
 

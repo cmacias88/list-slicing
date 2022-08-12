@@ -67,7 +67,7 @@ def custom_extend(input_list, second_list):
 
     """
 
-    input_list[0:] = ['Jan', 'Feb', 'Mar', 'Apr', 'May']
+    input_list[0:] = input_list + second_list
 
     pass
 
@@ -181,6 +181,9 @@ def custom_reverse(input_list):
         True
 
     """
+
+    for i in input_list:
+        input
 
     pass
 

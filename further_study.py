@@ -95,13 +95,17 @@ def custom_insert(input_list, index, value):
 
     index_plus_one = index + 1
 
-    initial = input_list[0:index]
-    print(initial)
+    additional_value = [' ']
 
-    external = input_list[index:]
-    print(external)
+    additional_value[0] = value
 
-    input_list[index] = value
+    before_insert = input_list[0:index]
+
+    after_insert = input_list[-1:index_plus_one]
+
+    input_list[0:] = before_insert + additional_value + after_insert
+
+    pass
 
 
 print(custom_insert(['Jan', 'Mar'], 1, 'Feb'))

@@ -201,8 +201,13 @@ def custom_contains(input_list, value):
 
     """
 
-    return None
+    for i in input_list:
+        if i == value:
+            same_value = True
+        else:
+            same_value = False
 
+    return same_value
 
 def custom_equality(some_list, another_list):
     """Return True if passed lists are identical, False otherwise.

@@ -108,9 +108,6 @@ def custom_insert(input_list, index, value):
     pass
 
 
-print(custom_insert(['Jan', 'Mar'], 1, 'Feb'))
-
-
 def custom_remove(input_list, value):
     """Remove the first item of the value in list.
 
@@ -127,10 +124,16 @@ def custom_remove(input_list, value):
 
     """
 
-    input_list.remove('Do')
+    for i, item in enumerate(input_list):
+        print(i)
+        if item == value:
+            print(i)
+            del input_list[i]
+            break
 
     pass
 
+print(custom_remove(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do'], 'Do'))
 
 def custom_pop(input_list):
     """Remove the last item in the list and returns it.

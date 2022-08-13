@@ -216,10 +216,11 @@ def custom_reverse(input_list):
 
     """
 
-    for i in input_list:
-        input
-
+    input_list[0:] = input_list[::-1]
+        
     pass
+
+print(custom_reverse([0, 3, 6, 9, 12, 15, 18, 21, 24, 27]))
 
 def custom_contains(input_list, value):
     """Return True or False if value is in the input_list.

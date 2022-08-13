@@ -91,22 +91,25 @@ def custom_insert(input_list, index, value):
 
     """
 
-    index = int(index)
+    new_list = input_list[0:]
 
-    index_plus_one = index + 1
+    second_new_list = input_list[0:]
+
+    index = int(index)
 
     additional_value = [' ']
 
     additional_value[0] = value
 
-    before_insert = input_list[0:index]
+    before_insert = new_list[:index]
 
-    after_insert = input_list[-1:index_plus_one]
+    after_insert = second_new_list[index:]
 
     input_list[0:] = before_insert + additional_value + after_insert
 
-    pass
+    print(input_list)
 
+    pass
 
 def custom_remove(input_list, value):
     """Remove the first item of the value in list.
